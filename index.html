@@ -18,17 +18,21 @@
             embedded
             gesture-detector
         >
+        <!-- 3Dモデルの指定 -->
             <a-assets>
+                 <!-- １個め -->
                 <a-asset-item
                     id="animated-asset"
                     src="assets/asset.glb"
                 ></a-asset-item>
+                 <!-- ２個め -->
                 <a-asset-item
-                id="animated-asset2"
-                src="assets/asset2.glb"
-            ></a-asset-item>
+                     id="animated-asset2"
+                    src="assets/asset2.glb"
+                ></a-asset-item>
             </a-assets>
 
+        <!-- 3Dマーカーの指定１つめ -->
             <a-marker
                 id="animated-marker"
                 type="pattern"
@@ -38,17 +42,18 @@
                 emitevents="true"
                 cursor="fuse: false; rayOrigin: mouse;"
                 id="markerA"
-            >
-                <a-entity
+            ><a-entity
                     id="bowser-model"
-                    scale="0.527844036392804 0.527844036392804 0.527844036392804"
+                    scale="11.827844036392804 11.827844036392804 11.827844036392804"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
                     class="clickable"
                     gesture-handler
                 ></a-entity>
             </a-marker>
-
+           
+            
+        <!-- 3Dマーカーの指定２つめ -->
             <a-marker
             id="animated-marker2"
             type="pattern"
@@ -58,10 +63,9 @@
             emitevents="true"
             cursor="fuse: false; rayOrigin: mouse;"
             id="markerA"
-        >
-            <a-entity
+        ><a-entity
                 id="bowser-model2"
-                scale="0.527844036392804 0.527844036392804 0.527844036392804"
+                scale="11.827844036392804 11.827844036392804 11.827844036392804"
                 animation-mixer="loop: repeat"
                 gltf-model="#animated-asset2"
                 class="clickable"
